@@ -28,3 +28,5 @@ print(p1, p2, p3, p3_percent)
 # semantic errors, did some thing....but not what you wanted
 p3_percent = total_bill * (100 - (.3 + .15)) # calc the diff
 print(p3_percent, "p3 bill with an error")
+
+# this is the end of class
