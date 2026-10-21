@@ -43,12 +43,10 @@ outfile.close()
 
 # but we only want the positive matches
 outfile = open('the_w_lines.txt', 'wt', encoding='utf-8')
-
 for l in lines:
     clean_l = l.strip() # stripping off newlines
     clean_text = clean_l.strip(string.punctuation) # remove punc off sides
     if clean_text.startswith('w') == True:
         # we only want to see the matches
         outfile.write(clean_text + "\n")
-
 outfile.close()
