@@ -3,13 +3,14 @@ numbers = ['45', '99', '34']
 
 # look at a super small nested loop
 for w in words: # outer loop
-    # print(w)
+    print(w, "outline loop print")
     for n in numbers: # inner loop
         print(w, n)
 
 print("Let's invert that")
 
 for n in numbers:
+    print(n)
     for w in words:
         # print(w, n)
         print(n, w)
@@ -46,6 +47,7 @@ words = ['lion', 'platapus', 'elephant', 'wombat', 'snake', 'horse']
 for w in words:
     filename = w + '.txt'
     outfile = open(filename, 'wt', encoding='utf-8')
+    print(w)
     for n in numbers:
         text = "there are " + n + " " + w + "s\n"
         outfile.write(text)
